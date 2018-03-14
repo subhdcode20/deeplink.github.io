@@ -10,14 +10,14 @@
         1. if user has app installed, then they would be redirected to open the app to specified screen
         2. if user doesn't have app installed, then their browser wouldn't recognize the URL scheme
         and app wouldn't open since it's not installed. In 1 second (1000 milliseconds) user is redirected
-        to download app from app store.
+        to open the next app link.
      -->
     <script>
     window.onload = function() {
-    <!-- Deep link URL for existing users with app already installed on their device -->
+    <!-- Deep link URL for existing users with telegram already installed on their device -->
         window.location = 'http://telegram.me/NearGroupBot';
     
-    <!-- Download URL (TUNE link) for new users to download the app -->
+    <!-- Secondary Deep Link URL for new users to open fb messenger -->
         setTimeout("window.location = 'https://M.me/NearGroup'", 1000);
     }
     </script>
@@ -32,10 +32,10 @@
         <input type="submit" value="Open telegram" />
     </form>
     
-    -->
     <form action="https://urlgeni.us/twitter/pmch" target="_blank">
         <input type="submit" value="Open twitter -tele" />
     </form>
+    -->
     
  
 </body>
