@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0" />
     <title>Site Name</title>
     <style>@media screen and (max-device-width:480px){body{-webkit-text-size-adjust:none}}</style>
- 
+
     <!-- implement javascript on web page that first first tries to open the deep link
         1. if user has app installed, then they would be redirected to open the app to specified screen
         2. if user doesn't have app installed, then their browser wouldn't recognize the URL scheme
@@ -14,17 +14,23 @@
      -->
     <script>
     window.onload = function() {
-    <!-- Deep link URL for existing users with telegram already installed on their device -->
+    <!-- Deep link URL for app already installed on their device -->
+    <!-- fb messenger -->
         window.location = 'https://M.me/NearGroup'
-    <!-- Secondary Deep Link URL for new users to open fb messenger -->
-        setTimeout(function(){ window.location = 'viber://pa?chatURI=NearGroup' }, 1000);
-        
-        setTimeout(function(){ window.location = 'https://telegram.me/NearGroupBot' }, 1500); 
-        
-        setTimeout(function(){ window.location = 'https://line.me/R/ti/p/@neargroup' }, 2000);
-        
-        setTimeout(function(){ window.location = 'https://play.google.com/store/apps/details?id=com.nearbygroup.nearby' }, 2500);
-        
+    <!-- twitter -->
+        setTimeout(function(){ window.location = 'https://twitter.com/messages/compose?recipient_id=1003563137772032000' }, 1000);
+    <!-- line -->
+        setTimeout(function(){ window.location = 'https://line.me/R/ti/p/@neargroup' }, 1500);
+    <!-- viber -->
+        setTimeout(function(){ window.location = 'viber://pa?chatURI=NearGroup' }, 2000);
+    <!-- telegram -->
+        setTimeout(function(){ window.location = 'https://telegram.me/NearGroupBot' }, 2500);
+    <!-- kik -->
+
+    <!-- playstore -->
+        setTimeout(function(){ window.location = 'https://play.google.com/store/apps/details?id=com.nearbygroup.nearby' }, 3000);
+    <!-- neargroup.me -->
+        setTimeout(function(){ window.location = 'https://www.neargroup.me/' }, 3500);
     }
     </script>
 </head>
@@ -33,16 +39,16 @@
     <form action="https://urlgeni.us/facebook/chND" target="_blank">
         <input type="submit" value="Open fb" />
     </form>
-    
+
     <form action="t.me/NearGroup" target="_blank">
         <input type="submit" value="Open telegram" />
     </form>
-    
+
     <form action="https://urlgeni.us/twitter/pmch" target="_blank">
         <input type="submit" value="Open twitter -tele" />
     </form>
     -->
-    
- 
+
+
 </body>
 </html>
